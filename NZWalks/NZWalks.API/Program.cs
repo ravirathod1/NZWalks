@@ -20,6 +20,8 @@ builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 
 builder.Services.AddScoped<IWalkRepository,WalkRrepository>();
 
+builder.Services.AddScoped<IWalkDifficultyRepository,WalkDifficultyRrepository>();
+
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
